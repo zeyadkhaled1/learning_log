@@ -8,3 +8,4 @@ python manage.py startapp appname(Making a new app)
 After Model Change:
 python manage.py makemigrations appname
 python manage.py migrate
+For Making Superuser:python manage.py createsuperuser
