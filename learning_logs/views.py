@@ -113,4 +113,4 @@ def delete_topic(request, topic_id):
 
 
 def handling_404(request, exception):
-    return render(request, '404.html', {})
+    return render(request, '404.html')
