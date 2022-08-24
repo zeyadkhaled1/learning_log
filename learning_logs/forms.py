@@ -1,6 +1,3 @@
-from cProfile import label
-import imp
-from tkinter import Widget
 from django import forms
 from .models import Topic, Entry
 
