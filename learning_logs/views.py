@@ -110,3 +110,7 @@ def delete_topic(request, topic_id):
     record = Topic.objects.get(id=topic_id)
     record.delete()
     return redirect('learning_logs:topics')
+
+
+def handling_404(request, exception):
+    return render(request, '404.html', {})
