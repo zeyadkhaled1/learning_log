@@ -1,4 +1,10 @@
 {% extends "learning_logs/base.html" %}
 {% block content %}
-<p>You have been logged out.Thank you for visiting</p>
+<div class="jumbotron">
+    <h1 class="display-3">Logged out.</h1>
+    <p class="lead">
+        You Logged Out .
+    </p>
+    <a class="btn btn-lg btn-primary" href="{%  url 'users:login' %}" role="button">Log in &raquo;</a>
+</div>
 {% endblock content %}

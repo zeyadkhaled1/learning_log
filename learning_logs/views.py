@@ -93,3 +93,20 @@ def edit_entry(request, entry_id):
 def check_topic_owner(request, topic):
     if topic.owner != request.user:
         raise Http404
+
+
+@login_required
+def delete_entry(request, entry_id):
+    """ُDelete an existing entry"""
+    record = Entry.objects.get(id=entry_id)
+    topic = record.topic
+    record.delete()
+    return redirect('learning_logs:topic', topic_id=topic.id)
+
+
+@login_required
+def delete_topic(request, topic_id):
+    """ُDelete an existing entry"""
+    record = Topic.objects.get(id=topic_id)
+    record.delete()
+    return redirect('learning_logs:topics')
