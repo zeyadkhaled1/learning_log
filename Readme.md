@@ -1,11 +1,10 @@
-python -m venv environmentname(Making Virtual Environment)
-environmentname\Scripts\activate (Activating Virtual Environment)
-pip install django(Installing Django)
-django-admin startproject projectname .(For Starting a new Project)
-python manage.py migrate(For Creating Database for the first time)
-python manage.py runserver (Running the server)
-python manage.py startapp appname(Making a new app)
-After Model Change:
-python manage.py makemigrations appname
-python manage.py migrate
-For Making Superuser:python manage.py createsuperuser
+
+# Learning logs
+
+A Simple Web Application Using Django that provides Basic Functionality like (Registration,logging,Adding Topic,Adding Entries For each top,Deleting/modifying Entries for each Topic)
+
+
+
+## Deployment
+App With Deployed Using Heroku,Demo Link:
+https://my-personal-learning-log.herokuapp.com/
